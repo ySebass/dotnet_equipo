@@ -29,5 +29,19 @@ namespace proyectoPrueba
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
+		
+		void RegistrarteToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			Form1 f=new Form1();
+			f.Show();
+			this.Hide();
+		}
+		
+		void IniciarSesionToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			Login l=new Login();
+			l.Show();
+			this.Hide();
+		}
 	}
 }

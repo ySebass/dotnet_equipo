@@ -37,16 +37,45 @@ namespace proyectoPrueba
 		private void InitializeComponent()
 		{
 			this.label1 = new System.Windows.Forms.Label();
+			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+			this.registrarteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.iniciarSesionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.menuStrip1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// label1
 			// 
-			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.Location = new System.Drawing.Point(47, 9);
+			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.Location = new System.Drawing.Point(36, 105);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(189, 23);
+			this.label1.Size = new System.Drawing.Size(218, 36);
 			this.label1.TabIndex = 0;
-			this.label1.Text = "MENU PRINCIPAL";
+			this.label1.Text = "BIENVENIDO!!!!";
+			// 
+			// menuStrip1
+			// 
+			this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+									this.registrarteToolStripMenuItem,
+									this.iniciarSesionToolStripMenuItem});
+			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+			this.menuStrip1.Name = "menuStrip1";
+			this.menuStrip1.Size = new System.Drawing.Size(284, 24);
+			this.menuStrip1.TabIndex = 1;
+			this.menuStrip1.Text = "menuStrip1";
+			// 
+			// registrarteToolStripMenuItem
+			// 
+			this.registrarteToolStripMenuItem.Name = "registrarteToolStripMenuItem";
+			this.registrarteToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
+			this.registrarteToolStripMenuItem.Text = "Registrarte";
+			this.registrarteToolStripMenuItem.Click += new System.EventHandler(this.RegistrarteToolStripMenuItemClick);
+			// 
+			// iniciarSesionToolStripMenuItem
+			// 
+			this.iniciarSesionToolStripMenuItem.Name = "iniciarSesionToolStripMenuItem";
+			this.iniciarSesionToolStripMenuItem.Size = new System.Drawing.Size(87, 20);
+			this.iniciarSesionToolStripMenuItem.Text = "Iniciar sesion";
+			this.iniciarSesionToolStripMenuItem.Click += new System.EventHandler(this.IniciarSesionToolStripMenuItemClick);
 			// 
 			// MainForm
 			// 
@@ -54,10 +83,18 @@ namespace proyectoPrueba
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(284, 261);
 			this.Controls.Add(this.label1);
+			this.Controls.Add(this.menuStrip1);
+			this.MainMenuStrip = this.menuStrip1;
 			this.Name = "MainForm";
-			this.Text = "proyectoPrueba";
+			this.Text = "Programa";
+			this.menuStrip1.ResumeLayout(false);
+			this.menuStrip1.PerformLayout();
 			this.ResumeLayout(false);
+			this.PerformLayout();
 		}
+		private System.Windows.Forms.ToolStripMenuItem iniciarSesionToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem registrarteToolStripMenuItem;
+		private System.Windows.Forms.MenuStrip menuStrip1;
 		private System.Windows.Forms.Label label1;
 	}
 }
